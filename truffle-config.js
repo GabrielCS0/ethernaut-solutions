@@ -8,7 +8,7 @@ module.exports = {
   networks: {
     rinkeby: {
       provider: function() {
-        return new HDWalletProvider(mnemonic, `https://rinkeby.infura.io/v3/${infuraToken}`);
+        return new HDWalletProvider(mnemonic, `wss://rinkeby.infura.io/ws/v3/${infuraToken}`);
       },
       network_id: 4,
       gas: 4500000,
